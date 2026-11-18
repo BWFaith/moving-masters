@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <title>
+      Book &amp; Get A Quote | Moving Masters –
+      Fayetteville, NC Movers
+    </title>
+    <meta
+      name="description"
+      content="Build your estimate, book your date – we email you the quote instantly."
+    />
+    <meta
+      name="theme-color"
+      content="#0a1a3f"
+    />
+    <link
+      rel="icon"
+      href="assets/img/move-logo.jpg"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <header class="hd">
+      <div class="wrap nav">
+        <a
+          class="brand"
+          href="index.html"
+          ><img
+            src="assets/img/move-logo.jpg"
+            alt="Moving Masters logo"
+          /><span
+            >Moving Masters<small
+              >Move with confidence</small
+            ></span
+          ></a
+        >
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="areas.html">Areas</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a
+          class="btn"
+          href="booking.html"
+          >Get a Quote</a
+        ><button
+          class="bg"
+          aria-label="Menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <section
+      class="page"
+      style="--pi: url(assets/img/hero-section-image.jpg)"
+    >
+      <div class="wrap">
+        <span class="eyebrow">Booking</span>
+        <h1>Book &amp; Get A Quote</h1>
+        <p>
+          Build your estimate, book your date – we email you
+          the quote instantly.
+        </p>
+      </div>
+    </section>
+    <section class="sec">
+      <div class="wrap bk">
+        <div class="fm rv">
+          <h3>Your Details</h3>
+          <form
+            id="quote"
+            data-mail
+            style="margin-top: 20px"
+          >
+            <div class="fg">
+              <div>
+                <label>Full Name</label
+                ><input
+                  name="name"
+                  required
+                />
+              </div>
+              <div>
+                <label>Email</label
+                ><input
+                  type="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div>
+                <label>Phone</label
+                ><input
+                  name="phone"
+                  required
+                />
+              </div>
+              <div>
+                <label>Moving Date</label
+                ><input
+                  type="date"
+                  name="date"
+                  required
+                />
+              </div>
+              <div>
+                <label>Preferred Time</label
+                ><select name="time">
+                  <option>Morning</option>
+                  <option>Afternoon</option>
+                  <option>Evening</option>
+                </select>
+              </div>
+              <div>
+                <label>Service</label
+                ><select name="service">
+                  <option>Local Move</option>
+                  <option>Loading / Unloading</option>
+                  <option>U-Box</option>
+                  <option>Packing</option>
+                  <option>
+                    Long Distance (call for quote)
+                  </option>
+                  <option>Junk Removal</option>
+                </select>
+              </div>
+              <div>
+                <label>Pickup Address</label
+                ><input
+                  name="from"
+                  required
+                />
+              </div>
+              <div>
+                <label>Drop-off Address</label
+                ><input
+                  name="to"
+                  required
+                />
+              </div>
+              <div>
+                <label>Load / Unload Crew</label
+                ><select name="loadCrew">
+                  <option value="2">
+                    2 Movers – $125/hr
+                  </option>
+                  <option value="3">
+                    3 Movers – $150/hr
+                  </option>
+                  <option value="4">
+                    4 Movers – $180/hr
+                  </option>
+                </select>
+              </div>
+              <div>
+                <label>Hours (min 2)</label
+                ><input
+                  type="number"
+                  name="loadHours"
+                  min="2"
+                  value="2"
+                />
+              </div>
+              <div>
+                <label>Packing Crew</label
+                ><select name="packCrew">
+                  <option value="0">No packing</option>
+                  <option value="2">
+                    2 Movers – $125/hr
+                  </option>
+                  <option value="3">
+                    3 Movers – $150/hr
+                  </option>
+                </select>
+              </div>
+              <div style="display: none">
+                <label>Packing Hours</label
+                ><input
+                  type="number"
+                  name="packHours"
+                  min="2"
+                  value="2"
+                />
+              </div>
+              <div class="full">
+                <label>Notes</label
+                ><textarea
+                  name="notes"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <p class="msg"></p>
+            <button
+              class="btn"
+              type="submit"
+              style="margin-top: 18px"
+            >
+              Book &amp; Email My Quote
+            </button>
+          </form>
+          <div class="ok">
+            <h3>You’re Booked In!</h3>
+            <p>
+              Estimated total <b id="okq"></b>. A copy of
+              your quote is on its way to your inbox and
+              ours.
+            </p>
+          </div>
+        </div>
+        <aside class="q rv">
+          <h3>Your Estimate</h3>
+          <div
+            class="tot"
+            id="qt"
+          >
+            $250
+          </div>
+          <ul>
+            <li><span id="ql"></span><b id="qlv"></b></li>
+            <li><span id="qp"></span><b id="qpv"></b></li>
+          </ul>
+          <p>
+            No extra fees. 2-hour minimum. Long-distance
+            moves – call 910-356-1676.
+          </p>
+        </aside>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="wrap rv">
+        <span class="eyebrow">Ready when you are</span>
+        <h2>Let’s Get Your Move Done Right</h2>
+        <p>
+          Free quotes, flat-rate pricing and a crew that
+          shows up on time. Build your estimate in under a
+          minute.
+        </p>
+        <a
+          class="btn"
+          href="booking.html"
+          >Book &amp; Get Instant Quote</a
+        >
+        <a
+          class="btn o"
+          href="tel:910-356-1676"
+          >Call 910-356-1676</a
+        >
+      </div>
+    </section>
+    <footer class="ft">
+      <div class="wrap grid">
+        <div>
+          <a
+            class="brand"
+            href="index.html"
+            ><img
+              src="assets/img/move-logo.jpg"
+              alt="Moving Masters"
+            /><span>Moving Masters</span></a
+          >
+          <p style="margin-top: 16px">
+            Professional, affordable &amp; reliable movers.
+            Family run since 2020 with big-company quality –
+            without the big-company price.
+          </p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="areas.html">Areas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li>Loading &amp; Unloading</li>
+            <li>U-Box Moves</li>
+            <li>Packing &amp; Unpacking</li>
+            <li>Long Distance</li>
+            <li>Junk Removal</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <a href="tel:910-356-1676">910-356-1676</a>
+            </li>
+            <li>
+              <a href="mailto:Khariharris003@gmail.com"
+                >Khariharris003@gmail.com</a
+              >
+            </li>
+            <li>Owen Dr, Fayetteville, NC</li>
+            <li>Open 24/7 for bookings</li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap cp">
+        © 2026 Moving Masters. All rights reserved.
+      </div>
+    </footer>
+    <a
+      class="call"
+      href="tel:910-356-1676"
+      aria-label="Call us"
+      >📞</a
+    >
+    <div class="lb">
+      <button aria-label="Close">×</button><img alt="" />
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
